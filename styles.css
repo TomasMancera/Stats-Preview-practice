@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  hsl(233, 47%, 7%);
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    display: flex;
+    width: 75%;
+    max-height: 400px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+}
+
+.info h1{
+    max-width: 75%;
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.violet-word{
+    color: hsl(277, 64%, 61%);
+}
+
+
+.info p{
+    max-width: 75%;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+.stats{
+    max-width: 75%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 1.1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    
+    
+}
+.stats-num{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+    color:  hsl(0, 0%, 100%);
+}
+.banner{
+   width: 50%;
+
+}
+
+.banner-img{
+    width: 100%;
+    max-height: 400px;
+    image-orientation: from-image;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: opacity(75%) invert(2%) sepia(10%) saturate(4876%) hue-rotate(247deg) brightness(95%) contrast(81%);
+    
+}
+
+.attribution{
+    text-align: center;
+    color: #fff;
+    
+}
+
+/*Responsive*/
+
+@media (max-width: 1136px){
+    .info h1 {
+        font-size: 28px;
+        text-align: center;
+
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    .stats{
+        gap: 3rem;
+        font-size: 11px;
+    }
+
+    .stats-num{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 990px){
+
+    .card{
+        max-width: 450px;
+        max-height: none;
+        flex-direction: column;
+        
+    }
+
+    .info{
+        width: 100%;
+        gap: 40px;
+        order: 1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .stats{
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .banner{
+        width: 100%;
+        
+       
+    }
+
+    .banner-img{
+        max-height: 300px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+
+    }
+
+    .attribution{
+        max-width: 400px;
+        text-align: left;
+    }
+
+    
+
+  
+
+}
+

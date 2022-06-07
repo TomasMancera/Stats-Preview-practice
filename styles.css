@@ -10,7 +10,7 @@ body{
 
 #container{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     
@@ -61,7 +61,7 @@ body{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 4rem;
+    gap: 3.7rem;
     font-family: 'Inter', sans-serif;
     color: hsla(0, 0%, 100%, 0.6);
     letter-spacing: 1.1px;
@@ -88,12 +88,16 @@ body{
 .banner-img{
     width: 100%;
     max-height: 400px;
-    image-orientation: from-image;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     filter: opacity(75%) invert(2%) sepia(10%) saturate(4876%) hue-rotate(247deg) brightness(95%) contrast(81%);
     
 }
+
+.mobile{
+    display: none;
+}
+
 
 .attribution{
     text-align: center;
@@ -121,15 +125,21 @@ body{
 
     .stats-num{
         font-size: 20px;
+       
     }
 }
 
 @media (max-width: 990px){
 
+    #container{
+        padding: 20px;
+    }
+
     .card{
         max-width: 450px;
         max-height: none;
         flex-direction: column;
+        
         
     }
 
@@ -156,20 +166,20 @@ body{
     }
 
     .banner-img{
-        max-height: 300px;
         border-top-left-radius: 10px;
         border-bottom-right-radius: 0;
 
     }
 
-    .attribution{
-        max-width: 400px;
-        text-align: left;
+    .desktop{
+        display: none;
     }
 
-    
-
-  
+    .mobile{
+        display: block;
+    }
+   
 
 }
+
 
